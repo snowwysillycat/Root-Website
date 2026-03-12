@@ -13,16 +13,8 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href={`${import.meta.env.BASE_URL}/favicon.svg`}
-		/>
-		<link
-			rel="icon"
-			type="image/x-icon"
-			href={`${import.meta.env.BASE_URL}/favicon.ico`}
-		/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{title} | /root</title>
@@ -34,13 +26,19 @@ const { title } = Astro.props;
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={`${title} | /root`} />
-		<meta property="og:description" content="/root - discord bot for linux users." />
-		<meta property="og:image" content={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<meta
+			property="og:description"
+			content="/root - discord bot for linux users."
+		/>
+		<meta property="og:image" content="/favicon.svg" />
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={`${title} | /root`} />
-		<meta property="twitter:description" content="/root - discord bot for linux users." />
-		<meta property="twitter:image" content={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<meta
+			property="twitter:description"
+			content="/root - discord bot for linux users."
+		/>
+		<meta property="twitter:image" content="/favicon.svg" />
 
 		<meta name="theme-color" content="#ff79c6" />
 
@@ -55,22 +53,13 @@ const { title } = Astro.props;
 		<div class="container site-wrapper">
 			<nav class="nav">
 				<div class="nav-content">
-					<a href={`${import.meta.env.BASE_URL}/`} class="logo">
+					<a href="/" class="logo">
 						<span class="prompt-icon">#</span> /root
 					</a>
 					<div class="nav-links">
-						<a
-							href={`${import.meta.env.BASE_URL}/commands`}
-							class="nav-item">./commands</a
-						>
-						<a
-							href={`${import.meta.env.BASE_URL}/invite`}
-							class="nav-item">./invite</a
-						>
-						<a
-							href={`${import.meta.env.BASE_URL}/help`}
-							class="nav-item">./help</a
-						>
+						<a href="/commands" class="nav-item">./commands</a>
+						<a href="/invite" class="nav-item">./invite</a>
+						<a href="/help" class="nav-item">./help</a>
 					</div>
 				</div>
 			</nav>

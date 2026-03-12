@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-    site: 'https://snowwysillycat.github.io',
+    site: 'https://droot.vercel.app/',
+    base: '',
     output: 'static',
 });
