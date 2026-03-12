@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/DRoot-bot/favicon.svg"><link rel="icon" type="image/x-icon" href="/DRoot-bot/favicon.ico"><meta name="generator" content="Astro v6.0.3"><title>Commands | /root</title><meta name="description" content="/root - discord bot for linux users."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet"><style>:root{--bg: #0d0d0d;--bg-lighter: #1a1a1a;--terminal-green: #00ff41;--terminal-pink: #ff7eb3;--terminal-blue: #00d9ff;--text: #e0e0e0;--text-muted: #888888;--border: #333333;--font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;--font-sans: "Inter", system-ui, sans-serif;--header-height: 60px;--window-shadow: 0 20px 50px rgba(0, 0, 0, .5)}*{box-sizing:border-box;margin:0;padding:0}body{font-family:var(--font-mono);background-color:var(--bg);background-image:radial-gradient(circle at 50% 50%,#1a1a1a,#0d0d0d);color:var(--text);line-height:1.6;min-height:100vh;overflow-x:hidden}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}h1,h2,h3,h4{font-family:var(--font-mono);color:var(--terminal-pink);text-transform:lowercase}a{color:var(--terminal-blue);text-decoration:none;transition:all .2s ease}a:hover{color:var(--terminal-pink);text-shadow:0 0 8px var(--terminal-pink)}.container{max-width:1000px;margin:0 auto;padding:0 1.5rem}.terminal-window{background:var(--bg-lighter);border:1px solid var(--border);border-radius:8px;box-shadow:var(--window-shadow);overflow:hidden;margin:2rem auto;width:100%;height:fit-content}@media(max-width:768px){.container{padding:0 1rem}.terminal-window{width:100%;margin:1rem 0;border-radius:8px}.nav-content{flex-direction:column;gap:1rem;padding:1rem 0;align-items:center}.nav-links{gap:1rem;flex-wrap:wrap;justify-content:center}.terminal-body{padding:1rem;font-size:.85rem;overflow-x:auto}.footer{padding:2rem 1rem;text-align:center}.footer-links{justify-content:center;display:flex}}.terminal-header{background:#252525;padding:.5rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid var(--border)}.dot{width:12px;height:12px;border-radius:50%}.dot-red{background:#ff5f56}.dot-yellow{background:#ffbd2e}.dot-green{background:#27c93f}.terminal-title{margin-left:auto;margin-right:auto;font-size:.8rem;color:var(--text-muted)}.terminal-body{padding:1.5rem;font-size:.95rem}.btn{display:inline-flex;align-items:center;padding:.5rem 1.25rem;border:1px solid var(--terminal-blue);color:var(--terminal-blue);border-radius:4px;font-weight:600;cursor:pointer;background:transparent;transition:all .2s ease}.btn:hover{background:var(--terminal-blue);color:var(--bg);box-shadow:0 0 15px var(--terminal-blue)}.btn-primary{border-color:var(--terminal-pink);color:var(--terminal-pink)}.btn-primary:hover{background:var(--terminal-pink);color:var(--bg);box-shadow:0 0 15px var(--terminal-pink)}.prompt:before{content:"root@root:~$ ";color:var(--terminal-green)}.command{color:var(--terminal-blue)}@keyframes blink{0%,to{opacity:1}50%{opacity:0}}.cursor{display:inline-block;width:8px;height:1.2em;background:var(--text);margin-left:4px;vertical-align:middle;animation:blink 1s infinite}.site-wrapper{display:flex;flex-direction:column;min-height:100vh;padding-top:1rem}.nav{margin-bottom:1rem}.nav-content{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0}.logo{font-weight:800;color:var(--text);font-size:1.2rem}.prompt-icon{color:var(--terminal-green);margin-right:.2rem}.nav-links{display:flex;gap:1.5rem}.nav-item{font-weight:400;color:var(--text-muted)}.nav-item:hover{color:var(--terminal-blue)}.main-window{margin:2rem auto;display:flex;flex-direction:column;height:fit-content}.terminal-body{flex-grow:1}.footer{padding:2rem 0;text-align:center}.footer-links{margin-bottom:1rem;font-size:.9rem}.footer-links a{color:var(--terminal-blue);margin:0 .5rem}.copyright{color:#555;font-size:.8rem;line-height:1.6}
+.man-header[data-astro-cid-vsv4bmjx]{margin-bottom:2rem}.total-count[data-astro-cid-vsv4bmjx]{color:var(--text-muted);font-size:.8rem;margin-top:.25rem}.category-block[data-astro-cid-vsv4bmjx]{margin-bottom:2rem}.dir-name[data-astro-cid-vsv4bmjx]{color:var(--terminal-pink);font-weight:700;margin-bottom:.5rem}.cmds-list[data-astro-cid-vsv4bmjx]{display:flex;flex-direction:column;gap:.25rem}.cmd-item[data-astro-cid-vsv4bmjx]{display:flex;gap:1rem;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cmd-permissions[data-astro-cid-vsv4bmjx]{color:var(--terminal-green);font-family:monospace}.cmd-owner[data-astro-cid-vsv4bmjx]{color:var(--text-muted)}.cmd-name[data-astro-cid-vsv4bmjx]{color:var(--terminal-blue);font-weight:700;min-width:120px}.cmd-desc[data-astro-cid-vsv4bmjx]{color:#555;font-style:italic}@media(max-width:600px){.cmd-permissions[data-astro-cid-vsv4bmjx],.cmd-owner[data-astro-cid-vsv4bmjx]{display:none}}.grep-input[data-astro-cid-vsv4bmjx]{background:transparent;border:none;color:var(--terminal-green);font-family:var(--font-mono);font-size:1rem;outline:none;width:200px}.grep-input[data-astro-cid-vsv4bmjx]::placeholder{color:#333}
+</style></head> <body> <div class="container site-wrapper"> <nav class="nav"> <div class="nav-content"> <a href="/DRoot-bot/" class="logo"> <span class="prompt-icon">#</span> /root
+</a> <div class="nav-links"> <a href="/DRoot-bot/commands" class="nav-item">./commands</a> <a href="/DRoot-bot/invite" class="nav-item">./invite</a> <a href="/DRoot-bot/help" class="nav-item">./help</a> </div> </div> </nav> <div class="terminal-window main-window"> <header class="terminal-header"> <div class="dot dot-red"></div> <div class="dot dot-yellow"></div> <div class="dot dot-green"></div> <span class="terminal-title">bash — Commands — 80x24</span> </header> <main class="terminal-body">  <div class="man-header" data-astro-cid-vsv4bmjx> <div class="prompt-line" data-astro-cid-vsv4bmjx> <span class="prompt" data-astro-cid-vsv4bmjx>man -k droot-bot</span> </div> <p class="total-count" data-astro-cid-vsv4bmjx>
+Manual pages for droot-bot binaries (48 entries)
+</p> </div> <div class="grep-search" style="margin-bottom: 2rem;" data-astro-cid-vsv4bmjx> <span class="prompt" style="color: var(--terminal-green);" data-astro-cid-vsv4bmjx>grep </span> <input type="text" id="grep-input" placeholder="search..." class="grep-input" data-astro-cid-vsv4bmjx> </div> <div id="commands-container" data-astro-cid-vsv4bmjx> <div class="category-block" data-category="actions" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./actions:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="emotion" data-desc="trigger specialized emotional visual responses (anime gifs) to express your current mood in the channel." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/emotion </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# trigger specialized emotional visual responses (anime gifs) to express your current mood in the channel. </span> </div><div class="cmd-item" data-name="reactions" data-desc="interactive anime-style reactions to respond to other users' messages with visual flair." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/reactions </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# interactive anime-style reactions to respond to other users&#39; messages with visual flair. </span> </div> </div> </div><div class="category-block" data-category="admin" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./admin:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="ban" data-desc="permanently restrict a user's access to the server. kernel-level security measure." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/ban </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# permanently restrict a user&#39;s access to the server. kernel-level security measure. </span> </div><div class="cmd-item" data-name="clear" data-desc="purge a specified number of recent messages from the current terminal buffer (channel)." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/clear </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# purge a specified number of recent messages from the current terminal buffer (channel). </span> </div><div class="cmd-item" data-name="kick" data-desc="eject a user from the server while allowing them the possibility of return." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/kick </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# eject a user from the server while allowing them the possibility of return. </span> </div><div class="cmd-item" data-name="settings" data-desc="modify core configuration parameters for the /root instance on this server." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/settings </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# modify core configuration parameters for the /root instance on this server. </span> </div><div class="cmd-item" data-name="timeout" data-desc="temporarily isolate a user, preventing them from sending messages for a specified duration." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/timeout </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# temporarily isolate a user, preventing them from sending messages for a specified duration. </span> </div><div class="cmd-item" data-name="unban" data-desc="revoke a permanent ban, allowing a previously restricted user to return." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/unban </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# revoke a permanent ban, allowing a previously restricted user to return. </span> </div><div class="cmd-item" data-name="warn" data-desc="issue a formal system warning to a user for protocol violations." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/warn </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# issue a formal system warning to a user for protocol violations. </span> </div> </div> </div><div class="category-block" data-category="economy" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./economy:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="cookiegiver" data-desc="transfer currency units (cookies) to another user in the economy subsystem." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/cookiegiver </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# transfer currency units (cookies) to another user in the economy subsystem. </span> </div><div class="cmd-item" data-name="cookies" data-desc="query the central database for your current cookie balance or view the high-score givers." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/cookies </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query the central database for your current cookie balance or view the high-score givers. </span> </div><div class="cmd-item" data-name="nom" data-desc="consume a currency unit to restore sanity. highly addictive economy interaction." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/nom </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# consume a currency unit to restore sanity. highly addictive economy interaction. </span> </div> </div> </div><div class="category-block" data-category="games" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./games:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="8ball" data-desc="consult the magic 8-ball quantum processor for high-probability answers to any question." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/8ball </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# consult the magic 8-ball quantum processor for high-probability answers to any question. </span> </div><div class="cmd-item" data-name="choose" data-desc="execute a randomization algorithm to pick from a set of user-provided options." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/choose </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute a randomization algorithm to pick from a set of user-provided options. </span> </div><div class="cmd-item" data-name="flip" data-desc="simulate a binary state transition using a virtual coin flip." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/flip </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# simulate a binary state transition using a virtual coin flip. </span> </div><div class="cmd-item" data-name="poll" data-desc="deploy an interactive data collection module to gather community feedback." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/poll </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# deploy an interactive data collection module to gather community feedback. </span> </div><div class="cmd-item" data-name="roll" data-desc="generate pseudorandom numbers based on standard dice notation (e.g. 1d20)." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/roll </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# generate pseudorandom numbers based on standard dice notation (e.g. 1d20). </span> </div> </div> </div><div class="category-block" data-category="general" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./general:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="suggest" data-desc="open a direct communication uplink to the /root developers for feedback and bugs." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/suggest </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# open a direct communication uplink to the /root developers for feedback and bugs. </span> </div> </div> </div><div class="category-block" data-category="owner" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./owner:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="reload" data-desc="refresh all command modules and hot-swap code without rebooting the bot. (owner only)" data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/reload </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# refresh all command modules and hot-swap code without rebooting the bot. (owner only) </span> </div><div class="cmd-item" data-name="say" data-desc="execute a text-to-speech simulation where the bot echoes your input. (owner only)" data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/say </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute a text-to-speech simulation where the bot echoes your input. (owner only) </span> </div><div class="cmd-item" data-name="ticket" data-desc="deploy the centralized support ticket panel for user assistance. (owner only)" data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/ticket </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# deploy the centralized support ticket panel for user assistance. (owner only) </span> </div><div class="cmd-item" data-name="whitelist" data-desc="manage the authorized access list for high-tier /root functionality. (owner only)" data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/whitelist </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# manage the authorized access list for high-tier /root functionality. (owner only) </span> </div> </div> </div><div class="category-block" data-category="search" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./search:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="cat" data-desc="query external databases for random feline visual data packets." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/cat </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query external databases for random feline visual data packets. </span> </div><div class="cmd-item" data-name="define" data-desc="access the linguistics database to retrieve formal definitions for any term." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/define </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# access the linguistics database to retrieve formal definitions for any term. </span> </div><div class="cmd-item" data-name="duckduckgo" data-desc="execute a privacy-centric web search via the duckduckgo api." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/duckduckgo </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute a privacy-centric web search via the DuckDuckGo API. </span> </div><div class="cmd-item" data-name="gif" data-desc="search extensive media repositories for animated graphics based on your query." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/gif </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# search extensive media repositories for animated graphics based on your query. </span> </div><div class="cmd-item" data-name="image" data-desc="execute complex generative algorithms or query existing image databases for visual assets." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/image </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute complex generative algorithms or query existing image databases for visual assets. </span> </div><div class="cmd-item" data-name="lyrics" data-desc="locate and display the lyrical transcription for musical tracks." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/lyrics </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# locate and display the lyrical transcription for musical tracks. </span> </div><div class="cmd-item" data-name="urban" data-desc="query the informal linguistic database (urban dictionary) for contemporary slang." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/urban </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query the informal linguistic database (Urban Dictionary) for contemporary slang. </span> </div><div class="cmd-item" data-name="weather" data-desc="retrieve real-time meteorological data for any specified coordinates or city." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/weather </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# retrieve real-time meteorological data for any specified coordinates or city. </span> </div><div class="cmd-item" data-name="wikipedia" data-desc="query the global knowledge repository for detailed encyclopedic information." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/wikipedia </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query the global knowledge repository for detailed encyclopedic information. </span> </div> </div> </div><div class="category-block" data-category="tools" data-astro-cid-vsv4bmjx> <div class="dir-name" style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;" data-astro-cid-vsv4bmjx>
+./tools:
+</div> <div class="cmds-list" style="display: flex; flex-direction: column; gap: 0.25rem;" data-astro-cid-vsv4bmjx> <div class="cmd-item" data-name="avatar" data-desc="retrieve and display the visual identification asset (avatar) of a user." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/avatar </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# retrieve and display the visual identification asset (avatar) of a user. </span> </div><div class="cmd-item" data-name="birthday" data-desc="manage and track user birth-anniversary data within the server subsystem." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/birthday </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# manage and track user birth-anniversary data within the server subsystem. </span> </div><div class="cmd-item" data-name="colour" data-desc="analyze hex color codes and provide detailed chromatic information." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/colour </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# analyze hex color codes and provide detailed chromatic information. </span> </div><div class="cmd-item" data-name="echo" data-desc="repeat any user-provided string back into the channel buffer." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/echo </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# repeat any user-provided string back into the channel buffer. </span> </div><div class="cmd-item" data-name="help" data-desc="display the core documentation and manual pages for all /root commands." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/help </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# display the core documentation and manual pages for all /root commands. </span> </div><div class="cmd-item" data-name="http" data-desc="query documentation for standardized network response status codes." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/http </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query documentation for standardized network response status codes. </span> </div><div class="cmd-item" data-name="info" data-desc="display detailed system specification and metadata about the /root bot." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/info </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# display detailed system specification and metadata about the /root bot. </span> </div><div class="cmd-item" data-name="math" data-desc="execute arithmetic operations and evaluate complex mathematical expressions." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/math </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute arithmetic operations and evaluate complex mathematical expressions. </span> </div><div class="cmd-item" data-name="password" data-desc="generate high-entropy, cryptographically secure random character strings." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/password </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# generate high-entropy, cryptographically secure random character strings. </span> </div><div class="cmd-item" data-name="ping" data-desc="measure the network round-trip latency between the bot and discord's servers." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/ping </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# measure the network round-trip latency between the bot and Discord&#39;s servers. </span> </div><div class="cmd-item" data-name="qr" data-desc="encode text or urls into 2d matrix barcodes (qr codes) for scanning." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/qr </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# encode text or URLs into 2D matrix barcodes (QR codes) for scanning. </span> </div><div class="cmd-item" data-name="reminder" data-desc="schedule future notification callbacks to be sent to your terminal." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/reminder </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# schedule future notification callbacks to be sent to your terminal. </span> </div><div class="cmd-item" data-name="serverinfo" data-desc="display metadata and statistics about the current server instance." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/serverinfo </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# display metadata and statistics about the current server instance. </span> </div><div class="cmd-item" data-name="shorten" data-desc="compress long network uris into compact, redirected short-links." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/shorten </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# compress long network URIs into compact, redirected short-links. </span> </div><div class="cmd-item" data-name="timezone" data-desc="manage localized temporal data and synchronize your time with the community." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/timezone </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# manage localized temporal data and synchronize your time with the community. </span> </div><div class="cmd-item" data-name="translate" data-desc="execute cross-lingual translation modules for any given text segment." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/translate </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# execute cross-lingual translation modules for any given text segment. </span> </div><div class="cmd-item" data-name="userinfo" data-desc="query the centralized user registry for detailed metadata about a specific individual." data-astro-cid-vsv4bmjx> <span class="cmd-permissions" style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;" data-astro-cid-vsv4bmjx>
+-rwxr-xr-x
+</span> <span class="cmd-owner" style="color: #444; margin: 0 1rem; font-size: 0.7rem;" data-astro-cid-vsv4bmjx>
+root
+</span> <span class="cmd-name" style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;" data-astro-cid-vsv4bmjx>
+/userinfo </span> <span class="cmd-desc" style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;" data-astro-cid-vsv4bmjx>
+# query the centralized user registry for detailed metadata about a specific individual. </span> </div> </div> </div> </div> <script>
+		const searchInput = document.getElementById("grep-input");
+		const categories = document.querySelectorAll(".category-block");
+
+		searchInput.addEventListener("input", (e) => {
+			const query = e.target.value.toLowerCase();
+
+			categories.forEach((cat) => {
+				let hasVisible = false;
+				const items = cat.querySelectorAll(".cmd-item");
+
+				items.forEach((item) => {
+					const name = item.getAttribute("data-name");
+					const desc = item.getAttribute("data-desc");
+					const matches =
+						name.includes(query) || desc.includes(query);
+					item.style.display = matches ? "flex" : "none";
+					if (matches) hasVisible = true;
+				});
+
+				cat.style.display = hasVisible ? "block" : "none";
+			});
+		});
+	</script> <div class="prompt-line" style="margin-top: 2rem;" data-astro-cid-vsv4bmjx> <span class="prompt" data-astro-cid-vsv4bmjx></span><span class="cursor" data-astro-cid-vsv4bmjx></span> </div>  </main> </div> <footer class="footer"> <div class="footer-links"> <a href="https://github.com/DRoot-bot/" target="_blank">github.lnk</a> |
+<a href="https://snowwy.is-a.dev" target="_blank">website.lnk</a> </div> <p class="copyright">
+[SYSTEM] /root v1.0.0-linux | Bot by <a href="https://snowwy.is-a.dev" target="_blank" style="color: var(--terminal-pink);">snowwysillycat</a><br>
+(c) 2026 Snowwysillycat
+</p> </footer> </div></body></html>

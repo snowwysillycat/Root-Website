@@ -1,0 +1,242 @@
+[
+  {
+    "name": "emotion",
+    "description": "trigger specialized emotional visual responses (anime gifs) to express your current mood in the channel.",
+    "category": "Actions"
+  },
+  {
+    "name": "reactions",
+    "description": "interactive anime-style reactions to respond to other users' messages with visual flair.",
+    "category": "Actions"
+  },
+  {
+    "name": "ban",
+    "description": "permanently restrict a user's access to the server. kernel-level security measure.",
+    "category": "Admin"
+  },
+  {
+    "name": "clear",
+    "description": "purge a specified number of recent messages from the current terminal buffer (channel).",
+    "category": "Admin"
+  },
+  {
+    "name": "kick",
+    "description": "eject a user from the server while allowing them the possibility of return.",
+    "category": "Admin"
+  },
+  {
+    "name": "settings",
+    "description": "modify core configuration parameters for the /root instance on this server.",
+    "category": "Admin"
+  },
+  {
+    "name": "timeout",
+    "description": "temporarily isolate a user, preventing them from sending messages for a specified duration.",
+    "category": "Admin"
+  },
+  {
+    "name": "unban",
+    "description": "revoke a permanent ban, allowing a previously restricted user to return.",
+    "category": "Admin"
+  },
+  {
+    "name": "warn",
+    "description": "issue a formal system warning to a user for protocol violations.",
+    "category": "Admin"
+  },
+  {
+    "name": "cookiegiver",
+    "description": "transfer currency units (cookies) to another user in the economy subsystem.",
+    "category": "Economy"
+  },
+  {
+    "name": "cookies",
+    "description": "query the central database for your current cookie balance or view the high-score givers.",
+    "category": "Economy"
+  },
+  {
+    "name": "nom",
+    "description": "consume a currency unit to restore sanity. highly addictive economy interaction.",
+    "category": "Economy"
+  },
+  {
+    "name": "8ball",
+    "description": "consult the magic 8-ball quantum processor for high-probability answers to any question.",
+    "category": "Games"
+  },
+  {
+    "name": "choose",
+    "description": "execute a randomization algorithm to pick from a set of user-provided options.",
+    "category": "Games"
+  },
+  {
+    "name": "flip",
+    "description": "simulate a binary state transition using a virtual coin flip.",
+    "category": "Games"
+  },
+  {
+    "name": "poll",
+    "description": "deploy an interactive data collection module to gather community feedback.",
+    "category": "Games"
+  },
+  {
+    "name": "roll",
+    "description": "generate pseudorandom numbers based on standard dice notation (e.g. 1d20).",
+    "category": "Games"
+  },
+  {
+    "name": "suggest",
+    "description": "open a direct communication uplink to the /root developers for feedback and bugs.",
+    "category": "General"
+  },
+  {
+    "name": "reload",
+    "description": "refresh all command modules and hot-swap code without rebooting the bot. (owner only)",
+    "category": "Owner"
+  },
+  {
+    "name": "say",
+    "description": "execute a text-to-speech simulation where the bot echoes your input. (owner only)",
+    "category": "Owner"
+  },
+  {
+    "name": "ticket",
+    "description": "deploy the centralized support ticket panel for user assistance. (owner only)",
+    "category": "Owner"
+  },
+  {
+    "name": "whitelist",
+    "description": "manage the authorized access list for high-tier /root functionality. (owner only)",
+    "category": "Owner"
+  },
+  {
+    "name": "cat",
+    "description": "query external databases for random feline visual data packets.",
+    "category": "Search"
+  },
+  {
+    "name": "define",
+    "description": "access the linguistics database to retrieve formal definitions for any term.",
+    "category": "Search"
+  },
+  {
+    "name": "duckduckgo",
+    "description": "execute a privacy-centric web search via the DuckDuckGo API.",
+    "category": "Search"
+  },
+  {
+    "name": "gif",
+    "description": "search extensive media repositories for animated graphics based on your query.",
+    "category": "Search"
+  },
+  {
+    "name": "image",
+    "description": "execute complex generative algorithms or query existing image databases for visual assets.",
+    "category": "Search"
+  },
+  {
+    "name": "lyrics",
+    "description": "locate and display the lyrical transcription for musical tracks.",
+    "category": "Search"
+  },
+  {
+    "name": "urban",
+    "description": "query the informal linguistic database (Urban Dictionary) for contemporary slang.",
+    "category": "Search"
+  },
+  {
+    "name": "weather",
+    "description": "retrieve real-time meteorological data for any specified coordinates or city.",
+    "category": "Search"
+  },
+  {
+    "name": "wikipedia",
+    "description": "query the global knowledge repository for detailed encyclopedic information.",
+    "category": "Search"
+  },
+  {
+    "name": "avatar",
+    "description": "retrieve and display the visual identification asset (avatar) of a user.",
+    "category": "Tools"
+  },
+  {
+    "name": "birthday",
+    "description": "manage and track user birth-anniversary data within the server subsystem.",
+    "category": "Tools"
+  },
+  {
+    "name": "colour",
+    "description": "analyze hex color codes and provide detailed chromatic information.",
+    "category": "Tools"
+  },
+  {
+    "name": "echo",
+    "description": "repeat any user-provided string back into the channel buffer.",
+    "category": "Tools"
+  },
+  {
+    "name": "help",
+    "description": "display the core documentation and manual pages for all /root commands.",
+    "category": "Tools"
+  },
+  {
+    "name": "http",
+    "description": "query documentation for standardized network response status codes.",
+    "category": "Tools"
+  },
+  {
+    "name": "info",
+    "description": "display detailed system specification and metadata about the /root bot.",
+    "category": "Tools"
+  },
+  {
+    "name": "math",
+    "description": "execute arithmetic operations and evaluate complex mathematical expressions.",
+    "category": "Tools"
+  },
+  {
+    "name": "password",
+    "description": "generate high-entropy, cryptographically secure random character strings.",
+    "category": "Tools"
+  },
+  {
+    "name": "ping",
+    "description": "measure the network round-trip latency between the bot and Discord's servers.",
+    "category": "Tools"
+  },
+  {
+    "name": "qr",
+    "description": "encode text or URLs into 2D matrix barcodes (QR codes) for scanning.",
+    "category": "Tools"
+  },
+  {
+    "name": "reminder",
+    "description": "schedule future notification callbacks to be sent to your terminal.",
+    "category": "Tools"
+  },
+  {
+    "name": "serverinfo",
+    "description": "display metadata and statistics about the current server instance.",
+    "category": "Tools"
+  },
+  {
+    "name": "shorten",
+    "description": "compress long network URIs into compact, redirected short-links.",
+    "category": "Tools"
+  },
+  {
+    "name": "timezone",
+    "description": "manage localized temporal data and synchronize your time with the community.",
+    "category": "Tools"
+  },
+  {
+    "name": "translate",
+    "description": "execute cross-lingual translation modules for any given text segment.",
+    "category": "Tools"
+  },
+  {
+    "name": "userinfo",
+    "description": "query the centralized user registry for detailed metadata about a specific individual.",
+    "category": "Tools"
+  }
+]

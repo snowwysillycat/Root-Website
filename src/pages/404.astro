@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 - File Not Found">
+    <div class="error-screen">
+        <div class="prompt-line">
+            <span class="prompt">cd /usr/secret/files</span>
+        </div>
+
+        <div class="error-msg">
+            <p class="panic">*** KERNEL PANIC: NO_SUCH_FILE_OR_DIRECTORY ***</p>
+            <p>The requested resource was not found on this system.</p>
+
+            <div class="trace">
+                <code>
+                    ERROR_CODE: 404<br />
+                    LOCATION: {import.meta.url}<br />
+                    TIMESTAMP: {new Date().toISOString()}<br />
+                    ACTION: Please return to safer directories.
+                </code>
+            </div>
+
+            <div class="actions">
+                <a href={`${import.meta.env.BASE_URL}/`} class="btn btn-primary"
+                    >cd /home</a
+                >
+                <a href="javascript:history.back()" class="btn">cd ..</a>
+            </div>
+        </div>
+
+        <div class="prompt-line" style="margin-top: 2rem;">
+            <span class="prompt"></span><span class="cursor"></span>
+        </div>
+    </div>
+</Layout>
+
+<style is:global>
+    .error-screen {
+        max-width: 600px;
+        margin: 5rem auto;
+    }
+
+    .error-msg {
+        margin-top: 2rem;
+        border: 1px solid #ff5f56;
+        padding: 2rem;
+        background: rgba(255, 95, 86, 0.05);
+    }
+
+    .panic {
+        color: #ff5f56;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .trace {
+        background: #000;
+        padding: 1rem;
+        margin: 2rem 0;
+        font-size: 0.8rem;
+        color: #fff;
+        border-left: 3px solid #ff5f56;
+    }
+
+    .error-msg .actions {
+        display: flex;
+        gap: 1rem;
+    }
+</style>

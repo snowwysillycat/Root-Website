@@ -1,0 +1,180 @@
+---
+import Layout from "../layouts/Layout.astro";
+const userInviteLink =
+	"https://discord.com/oauth2/authorize?client_id=1480587366149394432";
+const whitelistSupportLink = "https://discord.gg/8xmwCQkW8g";
+---
+
+<Layout title="Invite">
+	<div class="auth-screen">
+		<div class="prompt-line">
+			<span class="prompt">./install.sh --select-type</span>
+		</div>
+
+		<div class="install-options">
+			<div class="terminal-window option-window">
+				<header class="terminal-header">
+					<span class="option-tag">[ SERVER_INSTALL ]</span>
+				</header>
+				<div class="terminal-body">
+					<p class="status">
+						STATUS: <span class="restricted"
+							>RESTRICTED (WHITELIST REQUIRED)</span
+						>
+					</p>
+					<p class="desc">
+						Add /root to your server with full functionality.
+					</p>
+
+					<div class="requirements">
+						<p class="req-title">Deployment Requirements:</p>
+						<ul>
+							<li>An active server with at least 200 members</li>
+							<li>Intention of growing your server</li>
+							<li>Non-abusive usage of /root commands</li>
+							<li>
+								Restricted if using bots with similar core
+								functionality
+							</li>
+							<li>Embrace the /root community spirit</li>
+						</ul>
+					</div>
+
+					<div class="action-box">
+						<p class="note">
+							Requires whitelist, request via Discord server.
+						</p>
+						<a
+							href={whitelistSupportLink}
+							target="_blank"
+							class="btn">ssh request_access</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="terminal-window option-window">
+				<header class="terminal-header">
+					<span class="option-tag">[ USER_INSTALL ]</span>
+				</header>
+				<div class="terminal-body">
+					<p class="status">
+						STATUS: <span class="available"
+							>AVAILABLE TO EVERYONE</span
+						>
+					</p>
+					<p class="desc">
+						Install /root to your account to use it everywhere.
+					</p>
+
+					<div class="features">
+						<p class="req-title">Benefits:</p>
+						<ul>
+							<li>Use /root commands in any server</li>
+							<li>Use commands in your Direct Messages</li>
+							<li>Includes a functional subset of commands</li>
+							<li>Instant access, no whitelist needed</li>
+						</ul>
+					</div>
+
+					<div class="action-box">
+						<a
+							href={userInviteLink}
+							target="_blank"
+							class="btn btn-primary">connect --user</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.auth-screen {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.install-options {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.option-window {
+		margin: 0;
+		border-color: #222;
+	}
+
+	.option-tag {
+		color: var(--terminal-blue);
+		font-weight: 800;
+		font-size: 0.9rem;
+	}
+
+	.status {
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.restricted {
+		color: #ff5f56;
+	}
+	.available {
+		color: var(--terminal-green);
+	}
+
+	.desc {
+		color: var(--text);
+		margin-bottom: 1.5rem;
+	}
+
+	.req-title {
+		color: var(--terminal-pink);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		text-decoration: underline;
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	li::before {
+		content: "-> ";
+		color: var(--terminal-blue);
+	}
+
+	li {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		margin-bottom: 0.25rem;
+	}
+
+	.action-box {
+		margin-top: auto;
+		padding-top: 1rem;
+		border-top: 1px dashed #222;
+	}
+
+	.note {
+		font-size: 0.75rem;
+		color: #666;
+		margin-bottom: 1rem;
+	}
+
+	.btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	@media (max-width: 500px) {
+		.install-options {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

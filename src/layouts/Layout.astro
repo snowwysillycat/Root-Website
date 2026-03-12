@@ -1,0 +1,174 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href={`${import.meta.env.BASE_URL}/favicon.svg`}
+		/>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href={`${import.meta.env.BASE_URL}/favicon.ico`}
+		/>
+		<meta name="generator" content={Astro.generator} />
+
+		<title>{title} | /root</title>
+		<meta
+			name="description"
+			content="/root - discord bot for linux users."
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container site-wrapper">
+			<nav class="nav">
+				<div class="nav-content">
+					<a href={`${import.meta.env.BASE_URL}/`} class="logo">
+						<span class="prompt-icon">#</span> /root
+					</a>
+					<div class="nav-links">
+						<a
+							href={`${import.meta.env.BASE_URL}/commands`}
+							class="nav-item">./commands</a
+						>
+						<a
+							href={`${import.meta.env.BASE_URL}/invite`}
+							class="nav-item">./invite</a
+						>
+						<a
+							href={`${import.meta.env.BASE_URL}/help`}
+							class="nav-item">./help</a
+						>
+					</div>
+				</div>
+			</nav>
+
+			<div class="terminal-window main-window">
+				<header class="terminal-header">
+					<div class="dot dot-red"></div>
+					<div class="dot dot-yellow"></div>
+					<div class="dot dot-green"></div>
+					<span class="terminal-title">bash — {title} — 80x24</span>
+				</header>
+				<main class="terminal-body">
+					<slot />
+				</main>
+			</div>
+
+			<footer class="footer">
+				<div class="footer-links">
+					<a href="https://github.com/DRoot-bot/" target="_blank"
+						>github.lnk</a
+					> |
+					<a href="https://snowwy.is-a.dev" target="_blank"
+						>website.lnk</a
+					>
+				</div>
+				<p class="copyright">
+					[SYSTEM] /root v1.0.0-linux | Bot by <a
+						href="https://snowwy.is-a.dev"
+						target="_blank"
+						style="color: var(--terminal-pink);">snowwysillycat</a
+					><br />
+					(c) {new Date().getFullYear()} Snowwysillycat
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	.site-wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		padding-top: 1rem;
+	}
+
+	.nav {
+		margin-bottom: 1rem;
+	}
+
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem 0;
+	}
+
+	.logo {
+		font-weight: 800;
+		color: var(--text);
+		font-size: 1.2rem;
+	}
+
+	.prompt-icon {
+		color: var(--terminal-green);
+		margin-right: 0.2rem;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.nav-item {
+		font-weight: 400;
+		color: var(--text-muted);
+	}
+
+	.nav-item:hover {
+		color: var(--terminal-blue);
+	}
+
+	.main-window {
+		margin: 2rem auto;
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+	}
+
+	.terminal-body {
+		flex-grow: 1;
+	}
+
+	.footer {
+		padding: 2rem 0;
+		text-align: center;
+	}
+
+	.footer-links {
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.footer-links a {
+		color: var(--terminal-blue);
+		margin: 0 0.5rem;
+	}
+
+	.copyright {
+		color: #555;
+		font-size: 0.8rem;
+		line-height: 1.6;
+	}
+</style>

@@ -1,0 +1,193 @@
+---
+import Layout from "../layouts/Layout.astro";
+import commands from "../data/commands.json";
+
+const categories = [...new Set(commands.map((cmd) => cmd.category))];
+---
+
+<Layout title="Commands">
+	<div class="man-header">
+		<div class="prompt-line">
+			<span class="prompt">man -k droot-bot</span>
+		</div>
+		<p class="total-count">
+			Manual pages for droot-bot binaries ({commands.length} entries)
+		</p>
+	</div>
+
+	<div class="grep-search" style="margin-bottom: 2rem;">
+		<span class="prompt" style="color: var(--terminal-green);">grep </span>
+		<input
+			type="text"
+			id="grep-input"
+			placeholder="search..."
+			class="grep-input"
+		/>
+	</div>
+
+	<div id="commands-container">
+		{
+			categories.map((category) => (
+				<div
+					class="category-block"
+					data-category={category.toLowerCase()}
+				>
+					<div
+						class="dir-name"
+						style="color: var(--terminal-pink); font-weight: 700; margin-bottom: 0.5rem;"
+					>
+						./{category.toLowerCase()}:
+					</div>
+					<div
+						class="cmds-list"
+						style="display: flex; flex-direction: column; gap: 0.25rem;"
+					>
+						{commands
+							.filter((cmd) => cmd.category === category)
+							.map((cmd) => (
+								<div
+									class="cmd-item"
+									data-name={cmd.name.toLowerCase()}
+									data-desc={cmd.description.toLowerCase()}
+								>
+									<span
+										class="cmd-permissions"
+										style="color: var(--terminal-green); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;"
+									>
+										-rwxr-xr-x
+									</span>
+									<span
+										class="cmd-owner"
+										style="color: #444; margin: 0 1rem; font-size: 0.7rem;"
+									>
+										root
+									</span>
+									<span
+										class="cmd-name"
+										style="color: var(--terminal-blue); font-weight: 700; min-width: 120px;"
+									>
+										/{cmd.name}
+									</span>
+									<span
+										class="cmd-desc"
+										style="color: var(--text-muted); font-style: italic; font-size: 0.85rem; line-height: 1.4;"
+									>
+										# {cmd.description}
+									</span>
+								</div>
+							))}
+					</div>
+				</div>
+			))
+		}
+	</div>
+
+	<script is:inline>
+		const searchInput = document.getElementById("grep-input");
+		const categories = document.querySelectorAll(".category-block");
+
+		searchInput.addEventListener("input", (e) => {
+			const query = e.target.value.toLowerCase();
+
+			categories.forEach((cat) => {
+				let hasVisible = false;
+				const items = cat.querySelectorAll(".cmd-item");
+
+				items.forEach((item) => {
+					const name = item.getAttribute("data-name");
+					const desc = item.getAttribute("data-desc");
+					const matches =
+						name.includes(query) || desc.includes(query);
+					item.style.display = matches ? "flex" : "none";
+					if (matches) hasVisible = true;
+				});
+
+				cat.style.display = hasVisible ? "block" : "none";
+			});
+		});
+	</script>
+
+	<div class="prompt-line" style="margin-top: 2rem;">
+		<span class="prompt"></span><span class="cursor"></span>
+	</div>
+</Layout>
+
+<style>
+	.man-header {
+		margin-bottom: 2rem;
+	}
+
+	.total-count {
+		color: var(--text-muted);
+		font-size: 0.8rem;
+		margin-top: 0.25rem;
+	}
+
+	.category-block {
+		margin-bottom: 2rem;
+	}
+
+	.dir-name {
+		color: var(--terminal-pink);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.cmds-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.cmd-item {
+		display: flex;
+		gap: 1rem;
+		font-size: 0.9rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.cmd-permissions {
+		color: var(--terminal-green);
+		font-family: monospace;
+	}
+
+	.cmd-owner {
+		color: var(--text-muted);
+	}
+
+	.cmd-name {
+		color: var(--terminal-blue);
+		font-weight: 700;
+		min-width: 120px;
+	}
+
+	.cmd-desc {
+		color: #555;
+		font-style: italic;
+	}
+
+	/* Mobile adjustments */
+	@media (max-width: 600px) {
+		.cmd-permissions,
+		.cmd-owner {
+			display: none;
+		}
+	}
+
+	/* Search Styling */
+	.grep-input {
+		background: transparent;
+		border: none;
+		color: var(--terminal-green);
+		font-family: var(--font-mono);
+		font-size: 1rem;
+		outline: none;
+		width: 200px;
+	}
+
+	.grep-input::placeholder {
+		color: #333;
+	}
+</style>
