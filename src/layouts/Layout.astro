@@ -31,6 +31,19 @@ const { title } = Astro.props;
 			content="/root - discord bot for linux users."
 		/>
 
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={`${title} | /root`} />
+		<meta property="og:description" content="/root - discord bot for linux users." />
+		<meta property="og:image" content={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={`${title} | /root`} />
+		<meta property="twitter:description" content="/root - discord bot for linux users." />
+		<meta property="twitter:image" content={`${import.meta.env.BASE_URL}/favicon.svg`} />
+
+		<meta name="theme-color" content="#ff79c6" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
