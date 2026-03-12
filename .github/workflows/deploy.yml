@@ -14,17 +14,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Website
         uses: actions/checkout@v4
+        with:
+          path: Root-Website
+      - name: Checkout Bot
+        uses: actions/checkout@v4
+        with:
+          repository: snowwysillycat/Root-dbot
+          path: Root-dbot
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: Root-Website/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd Root-Website
+          npm install
       - name: Extract commands
-        run: node extract_commands.cjs
+        run: |
+          cd Root-Website
+          node extract_commands.cjs
       - name: Build Astro
         run: npm run build
 
