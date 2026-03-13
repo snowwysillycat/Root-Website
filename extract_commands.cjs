@@ -18,14 +18,14 @@ function getCommands(dir) {
             try {
                 const content = fs.readFileSync(filePath, 'utf8');
 
-                const nameMatch = content.match(/name:\s*['"]([^'"]+)['"]/);
-                const descMatch = content.match(/description:\s*['"]([^'"]+)['"]/);
+                const nameMatch = content.match(/name:\s*['"]((?:\\.|[^'"])+)['"]/);
+                const descMatch = content.match(/description:\s*['"]((?:\\.|[^'"])+)['"]/);
 
                 if (nameMatch) {
                     const category = path.basename(path.dirname(filePath));
                     results.push({
-                        name: nameMatch[1],
-                        description: descMatch ? descMatch[1] : 'No description provided.',
+                        name: nameMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"'),
+                        description: descMatch ? descMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"') : 'No description provided.',
                         category: category.charAt(0).toUpperCase() + category.slice(1)
                     });
                 }

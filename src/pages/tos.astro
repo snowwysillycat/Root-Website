@@ -1,0 +1,187 @@
+---
+import Layout from "../layouts/Layout.astro";
+const lastUpdated = "13 March 2025";
+---
+
+<Layout title="Terms of Service">
+    <div class="prompt-line">
+        <span class="prompt">cat /etc/root/tos.txt</span>
+    </div>
+
+    <div class="legal-content">
+        <h1>Terms of Service</h1>
+        
+        <div class="meta-block">
+            <p>LAST_UPDATED: {lastUpdated}</p>
+        </div>
+
+        <section>
+            <h2>01. INTRODUCTION</h2>
+            <p>
+                These Terms of Service (“Terms”), incorporating the 
+                <a href="/privacy">Privacy Policy</a>, constitute a legal agreement between 
+                the Service Operator (“we”, “us”, or “our”) and you (“you”, or “your”).
+            </p>
+            <p>
+                By accessing <strong>https://droot.is-a.dev</strong> or interacting with the <strong>root Discord bot</strong>, 
+                you affirm that:
+            </p>
+            <ul>
+                <li>You are 13 years of age or older.</li>
+                <li>You have the legal authority (or parental consent) to be bound by these Terms.</li>
+                <li>You accept immediate application of modifications upon continued use.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>02. LICENSE_PERMISSIONS</h2>
+            <p>
+                We grant you a limited, revocable, non-exclusive license for personal, 
+                non-commercial use. Restricted actions include:
+            </p>
+            <ul>
+                <li>Unauthorized copying, modification, or distribution of Service assets.</li>
+                <li>Exploitation of intellectual property owned by the Service Operator.</li>
+                <li>Attempting to bypass access controls or service limitations.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>03. MODULE_SPECIFIC_POLICIES</h2>
+            <div class="sub-module">
+                <h3>Root_Tickets</h3>
+                <p>
+                    Server Owners must maintain user privacy. Using message history for 
+                    illegal purposes (e.g., blackmail) results in immediate service termination.
+                </p>
+            </div>
+            <div class="sub-module">
+                <h3>Message_Manager</h3>
+                <p>
+                    Enabling this feature requires Server Owners to provide clear notice 
+                    to members in an accessible channel. Non-compliance may result in 
+                    total service suspension.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>04. THIRD_PARTY_INTEGRATION</h2>
+            <p>
+                We utilize third-party services for infrastructure. We do not endorse 
+                or assume liability for third-party content, advertising, or data 
+                handling practices.
+            </p>
+        </section>
+
+        <section class="warning-block">
+            <h2>05. WARRANTY_VOID_DISCLAIMER</h2>
+            <pre>THE SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. 
+WE DO NOT WARRANT THAT THE SERVICE WILL BE SECURE, ERROR-FREE, 
+OR UNINTERRUPTED. USE AT YOUR OWN RISK.</pre>
+        </section>
+
+        <section>
+            <h2>06. GOVERNING_LAW</h2>
+            <p>
+                These Terms are governed by the laws of <strong>Egypt</strong>. If any provision 
+                is found unenforceable, the remainder of the Terms stay in full effect.
+            </p>
+        </section>
+
+        <section class="contact-footer">
+            <h2>07. CONTACT_TERMINAL</h2>
+            <p>Direct inquiries via:</p>
+            <ul>
+                <li>EMAIL: snowwy@danbot.host </li>
+                <li>DISCORD: <a href="https://droot.is-a.dev/help">https://droot.is-a.dev/help</a></li>
+            </ul>
+        </section>
+    </div>
+</Layout>
+
+<style>
+    .prompt-line {
+        margin-bottom: 2rem;
+        font-family: 'Fira Code', monospace;
+        color: var(--terminal-green, #4af626);
+    }
+
+    .legal-content {
+        color: var(--text, #e0e0e0);
+        line-height: 1.6;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .meta-block {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1rem;
+        border-left: 3px solid var(--terminal-pink);
+        margin-bottom: 2rem;
+        font-family: monospace;
+        font-size: 0.9rem;
+    }
+
+    .status-msg {
+        color: var(--terminal-pink);
+        font-weight: bold;
+    }
+
+    .legal-content h1 {
+        font-family: monospace;
+        color: var(--terminal-pink);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .legal-content h2 {
+        color: var(--terminal-blue);
+        font-family: monospace;
+        font-size: 1.1rem;
+        margin-top: 2.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .sub-module h3 {
+        font-family: monospace;
+        font-size: 1rem;
+        color: var(--terminal-pink);
+        margin: 1rem 0 0.5rem;
+    }
+
+    .legal-content ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .legal-content li {
+        padding-left: 1.5rem;
+        position: relative;
+        margin-bottom: 0.7rem;
+    }
+
+    .legal-content li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--terminal-pink);
+    }
+
+    .warning-block pre {
+        background: #1a1a1a;
+        padding: 1rem;
+        color: #ff5555;
+        white-space: pre-wrap;
+        font-family: monospace;
+        border: 1px solid #333;
+    }
+
+    a {
+        color: var(--terminal-blue);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>

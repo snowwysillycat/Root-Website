@@ -5,6 +5,11 @@
         "category": "Actions"
     },
     {
+        "name": "meme",
+        "description": "get a random meme from reddit !! ^w^",
+        "category": "Actions"
+    },
+    {
         "name": "reactions",
         "description": "express yourself with cute anime reactions !! ^w^",
         "category": "Actions"
@@ -22,6 +27,11 @@
     {
         "name": "kick",
         "description": "Kick a user",
+        "category": "Admin"
+    },
+    {
+        "name": "selfroles",
+        "description": "create a self-assignable role panel !! ^w^",
         "category": "Admin"
     },
     {
@@ -90,28 +100,8 @@
         "category": "General"
     },
     {
-        "name": "database_backup.zip",
-        "description": "No description provided.",
-        "category": "Owner"
-    },
-    {
-        "name": "reload",
-        "description": "reload all commands !! (owner only) ^w^",
-        "category": "Owner"
-    },
-    {
-        "name": "say",
-        "description": "make the bot say something !! (owner only)",
-        "category": "Owner"
-    },
-    {
-        "name": "ticket",
-        "description": "Send ticket panel",
-        "category": "Owner"
-    },
-    {
-        "name": "whitelist",
-        "description": "manage the server whitelist !! (owner only)",
+        "name": "dev",
+        "description": "developer tools and root access !! ^w^",
         "category": "Owner"
     },
     {
@@ -161,7 +151,7 @@
     },
     {
         "name": "avatar",
-        "description": "show someone\\",
+        "description": "show someone's avatar !! ^w^",
         "category": "Tools"
     },
     {
@@ -176,7 +166,7 @@
     },
     {
         "name": "echo",
-        "description": "repeat a message as the bot !! ^w^",
+        "description": "make me say something !! ^w^",
         "category": "Tools"
     },
     {
@@ -191,7 +181,7 @@
     },
     {
         "name": "info",
-        "description": "show information about femboy root !! ^w^",
+        "description": "show detailed architecture information about root !! ^w^",
         "category": "Tools"
     },
     {
@@ -206,7 +196,7 @@
     },
     {
         "name": "ping",
-        "description": "Check bot latency",
+        "description": "check bot latency and system heartbeat !! ^w^",
         "category": "Tools"
     },
     {
@@ -230,6 +220,11 @@
         "category": "Tools"
     },
     {
+        "name": "status",
+        "description": "show the bot system status !! ^w^",
+        "category": "Tools"
+    },
+    {
         "name": "ticket",
         "description": "manage the ticket system !! ^w^🎟️",
         "category": "Tools"
@@ -247,6 +242,11 @@
     {
         "name": "userinfo",
         "description": "get info about a user !! ^w^",
+        "category": "Tools"
+    },
+    {
+        "name": "xp",
+        "description": "check your level and xp status !! ^w^",
         "category": "Tools"
     }
 ]
