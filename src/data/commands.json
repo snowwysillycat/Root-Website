@@ -36,7 +36,7 @@
     },
     {
         "name": "settings",
-        "description": "configure bot settings for this server !! ^w^",
+        "description": "No description provided.",
         "category": "Admin"
     },
     {
@@ -96,12 +96,27 @@
     },
     {
         "name": "suggest",
-        "description": "submit a suggestion to the developers !! ^w^",
+        "description": "Submit a suggestion to the developers! ^w^",
         "category": "General"
+    },
+    {
+        "name": "leaderboard",
+        "description": "No description provided.",
+        "category": "Leveling"
+    },
+    {
+        "name": "xp",
+        "description": "No description provided.",
+        "category": "Leveling"
     },
     {
         "name": "dev",
         "description": "developer tools and root access !! ^w^",
+        "category": "Owner"
+    },
+    {
+        "name": "echo",
+        "description": "make me say something !! ^w^",
         "category": "Owner"
     },
     {
@@ -165,11 +180,6 @@
         "category": "Tools"
     },
     {
-        "name": "echo",
-        "description": "make me say something !! ^w^",
-        "category": "Tools"
-    },
-    {
         "name": "help",
         "description": "show all my commands !!",
         "category": "Tools"
@@ -181,7 +191,7 @@
     },
     {
         "name": "info",
-        "description": "show detailed architecture information about root !! ^w^",
+        "description": "No description provided.",
         "category": "Tools"
     },
     {
@@ -196,7 +206,7 @@
     },
     {
         "name": "ping",
-        "description": "check bot latency and system heartbeat !! ^w^",
+        "description": "No description provided.",
         "category": "Tools"
     },
     {
@@ -211,7 +221,7 @@
     },
     {
         "name": "serverinfo",
-        "description": "get info about this server !! ^w^",
+        "description": "No description provided.",
         "category": "Tools"
     },
     {
@@ -226,7 +236,7 @@
     },
     {
         "name": "ticket",
-        "description": "manage the ticket system !! ^w^🎟️",
+        "description": "manage tickets !! ^w^",
         "category": "Tools"
     },
     {
@@ -242,11 +252,6 @@
     {
         "name": "userinfo",
         "description": "get info about a user !! ^w^",
-        "category": "Tools"
-    },
-    {
-        "name": "xp",
-        "description": "check your level and xp status !! ^w^",
         "category": "Tools"
     }
 ]
